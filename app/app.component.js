@@ -16,6 +16,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
+        styles: ["\n    a.active {\n      color: #fff !important;\n    }\n    .navbar-inverse {\n      background-color: #222;\n    }\n    .navbar-inverse .navbar-nav>li>a{\n      color: #ccc;\n    }\n    .navbar-inverse .navbar-nav>li>a:hover {\n      color: #fff;\n    }\n    .navbar-inverse .navbar-brand {\n      color: #ccc;\n    }\n    .navbar-inverse .navbar-brand:hover {\n      color: #fff;\n    }\n  "],
         templateUrl: './app/app.component.html'
     })
 ], AppComponent);
