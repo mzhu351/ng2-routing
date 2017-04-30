@@ -10,8 +10,8 @@ export class User {
 const users: User[] = [
 	{
 		id: 1,
-		name: 'Chris',
-		username: 'sevilayha',
+		name: 'Min',
+		username: 'mzhu',
 		avatar: 'https://pbs.twimg.com/profile_images/789087337754062848/pRPiUEhA_400x400.jpg'
 	},
 	{
@@ -45,10 +45,10 @@ const users: User[] = [
 		<div class="row" *ngIf="users">
 
 			<div class="col-sm-4" *ngFor="let user of users">
-				<div class="profile-card">
+				<div class="profile-card" [routerLink]="['/about', user.username]">
 					<img [src]="user.avatar" class="img-responsive img-circle">
 					<h2>{{ user.name }}</h2>
-					<p><a href="#">{{ user.username }}</a></p>
+					<p><a href="https://twitter.com/{{ user.username }}">{{ user.username }}</a></p>
 				</div>
 			</div>
 
